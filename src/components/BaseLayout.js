@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 export default class BaseLayout extends Component {
   render() {
     return (
-      <div className="navbar">
+      <div>
         <NavBar />
         {this.props.children}
       </div>

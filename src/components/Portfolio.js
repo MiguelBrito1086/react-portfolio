@@ -4,7 +4,7 @@ export default class Portfolio extends Component {
   render() {
     return (
       <div>
-
+        <p>This is the Portfolio page.</p>
       </div>
     )
   }
