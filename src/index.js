@@ -7,14 +7,18 @@ import Portfolio from './components/Portfolio';
 import Home from './components/Home';
 import About from './components/About';
 import BaseLayout from './components/BaseLayout';
+import Contact from './components/Contact';
+import References from './components/References';
 
 ReactDOM.render(
 <BrowserRouter>
   <BaseLayout>
     <Switch>
-      <Route path='/About' component={About} />
-      <Route path='/Portfolio' component={Portfolio} />
-      <Route path='/' component={Home} />
+      <Route exact path='/About' component={About} />
+      <Route exact path='/Portfolio' component={Portfolio} />
+      <Route exact path='/Contact' component={Contact} />
+      <Route exact path='/References' component={References} />
+      <Route exact path='/' component={Home} />
     </Switch>
   </BaseLayout>
 </BrowserRouter>, document.getElementById('root'));
